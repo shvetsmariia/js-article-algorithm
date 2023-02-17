@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 apples from Max</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        const mainCharacter = "Max";
+        const specialDay = "birthday"; 
+        const number1 = 21; 
+        const number2 = 10; 
+        const number3 = number2 * 5; 
+        const people = ["Andrea", "Charlie", "Donald"]; 
+        const peopleListWithComa = people.map(people => " " + people); 
+        const author = {
+            title: "Dr.",
+            firstName: "Donald",
+            lastName: "Stoltz",
+            city: "Philadelphia",
+            state: "Pennsylvania"
+        }; 
+
+    document.body.innerHTML = `
+    <h1>${number1} apples from ${mainCharacter}</h1>
+    <h2>That’s how ${peopleListWithComa} celebrated ${mainCharacter}’s Bday.</h2>
+    <p>
+        When my grandson, ${mainCharacter}, told his mother, ${people[0]}, to donate any check she would give him for his ${number1}st ${specialDay}, ${people[0]} got an idea. She handed ${mainCharacter}’s brother ${people[1]} a video camera. Then she took out ${number1} $${number2} bills from the bank and bought ${number1} apples at the supermarket. 
+    </p>
+    <p>
+        When they spotted a homeless man, ${people[0]} told him, “Today is my son ${mainCharacter}’s ${number1}st ${specialDay}, and he asked me to give a gift to someone to help him celebrate.” She handed the man a $${number2} bill and an apple. The man smiled into the camera and announced, “Happy ${specialDay}, ${mainCharacter}!” 
+    </p>
+    <p>
+        Soon, they passed out their booty to men and women waiting in line at a soup kitchen. In a unified chorus, they wished ${mainCharacter}, “Happy ${specialDay}!” 
+    </p>
+    <p>
+        At a pizza parlor, ${people[0]} left $${number3} and told the owners to feed the hungry. “Happy ${specialDay}, ${mainCharacter}!” they shouted. 
+    </p>
+    <p>
+        With one last $${number2} bill and apple, they stopped at ${people[0]}’s sister’s office. Unable to contain her laughter or her tears, she bellowed into the camera, “Happy ${specialDay}, ${mainCharacter}!” 
+    </p>
+    <p>
+        — ${author.title} ${author.firstName} ${author.lastName}, ${author.city}, ${author.state}
+    </p>
+    `;
+    </script>
+</body>
+</html>
